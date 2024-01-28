@@ -46,7 +46,7 @@ namespace ChallengesWithTestsMark8.Tests
             ChallengesSet01 challenger = new ChallengesSet01();
 
             // Act
-            double actual = challenger.Subtract(minuend, subtrahend);
+            double actual = challenger.Subtract(minuend, subtrahend, expectedDifference);
 
             // Assert
             Assert.Equal(Math.Round(expectedDifference, 2), Math.Round(actual, 2));
